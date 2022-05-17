@@ -26,11 +26,16 @@
 
 .about__cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
 
 .about__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     background-color: var(--color-bg-variant);
     border: 1px solid transparent;
     border-radius: 1rem;
@@ -52,6 +57,16 @@
 .about__card small {
     font-size: 0.7rem;
     color: var(--color-light);
+}
+
+.about__logo-BK {
+    width: 35%;
+    margin: 0 auto;
+}
+
+.about__logo-Cyber {
+    width: 70%;
+    margin: 0 auto;
 }
 
 .about__content p {
@@ -87,7 +102,7 @@
     }
 
     .about__cards {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
 

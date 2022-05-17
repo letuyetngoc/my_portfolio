@@ -14,7 +14,7 @@ export default function Nav() {
             <a href='#' onClick={() => setActive('#')} className={active === '#' ? 'active' : ''}><AiOutlineHome /></a>
             <a href='#about' onClick={() => setActive('#about')} className={active === '#about' ? 'active' : ''}><AiOutlineUser /></a>
             <a href='#experience' onClick={() => setActive('#experience')} className={active === '#experience' ? 'active' : ''}><BsBook /></a>
-            <a href='#services' onClick={() => setActive('#services')} className={active === '#services' ? 'active' : ''}><RiServiceLine /></a>
+            {/* <a href='#services' onClick={() => setActive('#services')} className={active === '#services' ? 'active' : ''}><RiServiceLine /></a> */}
             <a href='#contact' onClick={() => setActive('#contact')} className={active === '#contact' ? 'active' : ''}><BiMessageSquareDetail /></a>
         </nav>
     )

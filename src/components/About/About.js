@@ -1,9 +1,11 @@
 import React from 'react'
 import './about.css'
 import ME from '../../assets/me-about.jpg'
-import { FaAward } from 'react-icons/fa'
-import { VscFolderLibrary } from 'react-icons/vsc'
-import { FiUsers } from 'react-icons/fi'
+// import { FaAward } from 'react-icons/fa'
+// import { VscFolderLibrary } from 'react-icons/vsc'
+// import { FiUsers } from 'react-icons/fi'
+import LogoBK from '../../assets/logoBK.png'
+import LogoCybersoft from '../../assets/cybersoft.png'
 
 export default function About() {
     return (
@@ -19,25 +21,19 @@ export default function About() {
                 <div className='about__content'>
                     <div className='about__cards'>
                         <article className='about__card'>
-                            <FaAward className='about__icon' />
-                            <h5>Experience</h5>
-                            <small>3+ Years Working</small>
+                            <img src={LogoBK} alt='about_me' className='about__logo-BK' />
+                            <h5>Ho Chi Minh City University of Technology</h5>
+                            <small>Chemical Engineering</small>
                         </article>
                         <article className='about__card'>
-                            <FiUsers className='about__icon' />
-                            <h5>Clients</h5>
-                            <small>200+ Worldwide</small>
-                        </article>
-                        <article className='about__card'>
-                            <VscFolderLibrary className='about__icon' />
-                            <h5>Project</h5>
-                            <small>80+ Completed</small>
+                            <img src={LogoCybersoft} alt='about_me' className='about__logo-Cyber' />
+                            <h5>Cybersoft Academy</h5>
+                            <small>FrontEnd Web</small>
                         </article>
                     </div>
-                    <p>If your project grows in size, this option is available. This method has the trade-off that it takes a long time to install the package. Suitable for MeteorJS, Gatsbyjs etc. If your project grows in size, this option is available. This method has the trade-off that it takes a long time to install the package. Suitable for MeteorJS, Gatsbyjs etc.</p>
+                    <p>I want to be a Front-end Developer. I love create polished and meaningful user experiences. I'm ready to collaborate with new opportunities and challenges.</p>
                     <a href='#contact' className='btn btn-primary'>Let's Talk</a>
                 </div>
-
             </div>
         </section>
     )
